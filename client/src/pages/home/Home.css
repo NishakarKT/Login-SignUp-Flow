@@ -1,0 +1,64 @@
+.home {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home__box {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.home__options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 30px 0;
+}
+
+.home__options > h1 {
+  font-size: 30px;
+}
+
+.home__options > h2 {
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.home__options > .MuiButton-root {
+  color: white;
+  background-color: darkmagenta;
+  font-size: 15px;
+  font-weight: 600 !important;
+  text-transform: none;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+.home__options > .MuiButton-root:hover {
+  filter: brightness(90%);
+  transform: scale(1.01);
+  background-color: darkmagenta;
+}
+
+.home__happyGifLeft,
+.home__happyGifRight {
+  object-fit: contain;
+  width: 100px;
+}
+
+.home__happyGifRight {
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 500px) {
+  .home__box {
+    flex-direction: column;
+  }
+}

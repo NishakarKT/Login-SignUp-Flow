@@ -1,0 +1,72 @@
+.error_404 {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.error_404__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.error_404__box > img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.error_404__box > h1 {
+  font-size: 25px;
+  color: #4f524e;
+  margin-top: 10px;
+}
+
+.error_404__box > h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4f524e;
+  margin-top: 10px;
+}
+
+.error_404__links {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.error_404__links .MuiSvgIcon-root {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.error_404__link {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to right, #39ad31, #38d42c);
+  font-weight: 600;
+  padding: 8px 0;
+  margin: 0 2px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.error_404__link:hover {
+  filter: brightness(90%);
+}
+
+@media only screen and (max-width: 350px) {
+  .error_404__box {
+    width: 95vw;
+  }
+}
